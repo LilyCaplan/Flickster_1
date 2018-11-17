@@ -1,28 +1,19 @@
-# Project 1 - Flickster
+# Project 1 - Flickster_1
 
-Flickster shows the latest movies currently playing in theaters. The app utilizes the Movie Database API to display images and basic information about these movies to the user.
+**Name of your app** shows the latest movies currently playing in theaters. The app utilizes the Movie Database API to display images and basic information about these movies to the user.
 
-Time spent: 5 hours spent in total
+Time spent: **X** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is completed:
 
-* [x ] User can view a list of movies (title, poster image, and overview) currently playing in theaters from the Movie Database API.
+* [x] Expose details of movie (ratings using RatingBar, popularity, and synopsis) in a separate activity.
 
-* [x ] Views should be responsive for both landscape/portrait mode.
-      * [x ] In portrait mode, the poster image, title, and movie overview is shown.
-      * [x ] In landscape mode, the rotated alternate layout should use the backdrop image instead and show the title and movie overview to the right of it.
+* [x] Allow video posts to be played in full-screen using the YouTubePlayerView (2 points)
 
-The following **optional** features are implemented:
-
-* [ ] Display a nice default [placeholder graphic](https://guides.codepath.com/android/Displaying-Images-with-the-Glide-Library#advanced-usage) for each image during loading
-* [ ] Improved the user interface by experimenting with styling and coloring.
-* [ ] For popular movies (i.e. a movie voted for more than 5 stars), the full backdrop image is displayed. Otherwise, a poster image, the movie title, and overview is listed. Use Heterogenous RecyclerViews and use different ViewHolder layout files for popular movies and less popular ones.
-
-The following **additional** features are implemented:
-
-* [ ] List anything else that you can get done to improve the app functionality!
+    * [x] When clicking on a popular movie (i.e. a movie voted for more than 5 stars) the video should be played immediately.
+    * [x] Less popular videos rely on the detailed page should show an image preview that can initiate playing a YouTube video.
 
 ## Video Walkthrough
 
