@@ -1,8 +1,11 @@
 package com.example.lilycaplan.flickster_1.models;
 
+import android.widget.RelativeLayout;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,11 +14,22 @@ import java.util.List;
  * Created by lilycaplan on 11/8/18.
  */
 
+
+@Parcel
 public class Movie {
     String posterPath;
     String title;
     String overview;
     String backdrop;
+    double voteAverage;
+    int movieId;
+
+    //empty constructor for parceler
+
+    public Movie(){
+
+    }
+
 
 
     public Movie(JSONObject jsonObject) throws JSONException{
@@ -23,6 +37,8 @@ public class Movie {
         title = jsonObject.getString("title");
         overview = jsonObject.getString("overview");
         backdrop = jsonObject.getString("backdrop_path");
+        voteAverage = jsonObject.getDouble("vote_average");
+        movieId = jsonObject.getInt("id");
     }
 
     public static List<Movie> fromJsonArray(JSONArray movieJsonArray)  throws JSONException{
@@ -49,4 +65,8 @@ public class Movie {
     public String getOverview() {
         return overview;
     }
+
+    public double getRating() { return voteAverage;}
+
+    public int getMovieId(){ return movieId;}
 }
